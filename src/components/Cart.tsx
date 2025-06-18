@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { X, Plus, Minus, WhatsApp } from "lucide-react";
+import { X, Plus, Minus, MessageCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useToast } from "@/hooks/use-toast";
 
@@ -125,7 +125,7 @@ export const Cart = ({ isOpen, onClose }: CartProps) => {
                 className="w-full bg-green-600 hover:bg-green-700 text-white"
                 size="lg"
               >
-                <WhatsApp className="w-5 h-5 mr-2" />
+                <MessageCircle className="w-5 h-5 mr-2" />
                 Finalizar Pedido via WhatsApp
               </Button>
             </div>
