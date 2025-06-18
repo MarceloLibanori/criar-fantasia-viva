@@ -11,6 +11,8 @@ export const Header = ({ onCartClick }: HeaderProps) => {
   const { getCartItemsCount } = useCart();
   const itemsCount = getCartItemsCount();
 
+  console.log("Header component rendering, items count:", itemsCount);
+
   return (
     <header className="bg-white shadow-sm border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">

@@ -8,6 +8,8 @@ import { CartProvider } from "@/components/CartContext";
 const Index = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
+  console.log("Index component rendering");
+
   return (
     <CartProvider>
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
